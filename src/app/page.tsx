@@ -1,7 +1,7 @@
+import { htmlContent } from "./htmlContent";
+
 export default function Home() {
   return (
-    <main>
-      <div>Hello world!</div>
-    </main>
+    <div suppressHydrationWarning dangerouslySetInnerHTML={{ __html: htmlContent }} />
   );
 }
