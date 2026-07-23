@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "TitanPipe - Webflow Ecommerce website template",
-  description: "TitanPipe is a professional Webflow Ecommerce template for roofing and construction businesses to showcase services, projects, and generate leads today.",
+  title: "Landmark Vanasiri | Farmland Plots for Sale Near Bengaluru",
+  description: "Own farmland plots at Landmark Vanasiri in Hosakote, 40 km from Bengaluru. Architectural leisure living meets long term farmland investment.",
   openGraph: {
-    title: "TitanPipe - Webflow Ecommerce website template",
-    description: "TitanPipe is a professional Webflow Ecommerce template for roofing and construction businesses to showcase services, projects, and generate leads today.",
+    title: "Landmark Vanasiri | Farmland Plots for Sale Near Bengaluru",
+    description: "Own farmland plots at Landmark Vanasiri in Hosakote, 40 km from Bengaluru. Architectural leisure living meets long term farmland investment.",
     images: [
       {
         url: "/images/696a502b5959735a04b66728_a31d9da5d5b4a67dab52fce97d71cb07_Social-share.jpg",
@@ -15,8 +15,8 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
-    title: "TitanPipe - Webflow Ecommerce website template",
-    description: "TitanPipe is a professional Webflow Ecommerce template for roofing and construction businesses to showcase services, projects, and generate leads today.",
+    title: "Landmark Vanasiri | Farmland Plots for Sale Near Bengaluru",
+    description: "Own farmland plots at Landmark Vanasiri in Hosakote, 40 km from Bengaluru. Architectural leisure living meets long term farmland investment.",
     images: ["/images/696a502b5959735a04b66728_a31d9da5d5b4a67dab52fce97d71cb07_Social-share.jpg"],
     card: "summary_large_image",
   },
