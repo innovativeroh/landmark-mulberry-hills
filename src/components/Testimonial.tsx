@@ -1,7 +1,84 @@
 import React from 'react';
 
+// No resident testimonials exist yet for Mulberry Hills. Per the client content brief,
+// this uses trust markers instead of invented quotes/names — replace with genuine
+// resident testimonials once Phase 1 is occupied.
+const trustMarkers = [
+  {
+    description: 'Every plot at Mulberry Hills comes with a clear, marketable title.',
+    title: 'Clear Marketable Title',
+  },
+  {
+    description: 'The layout is DTCP approved, carries E-Khata, and is registered under RERA.',
+    title: 'DTCP Approved, E-Khata, RERA Registered',
+  },
+  {
+    description: 'Buyers can access bank loan facilitation to finance their plot purchase.',
+    title: 'Bank Loan Facilitation',
+  },
+];
+
 export default function Testimonial() {
   return (
-    <section className="section testimonial"><div data-w-id="08b15570-e15d-75e0-beb3-3cf142898a71" style={{"opacity":"0"}} className="tesimonial-container"><div data-delay="2000" data-data-animation="cross" className="testimonials-slider w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true"><div className="skider-mask w-slider-mask"><div className="loop-slider w-slide"><div className="slider-item"><div className="slider-content-box"><div className="slider-sub-title-box"><div className="description">What Vanasiri Buyers Say</div></div><div className="slider-botton-content-box"><h2>“Finding a well-planned farmland project near Bengaluru was tough until we discovered Landmark Vanasiri. The process was transparent, and the location next to Nandugudi Forest is exactly the peaceful retreat we wanted.”</h2></div></div><div className="slider-author-image-wrap"><div className="slider-author-image-box"><img src="/images/696d1727e0b27165ed7c1ca6_Slider%20Author%20Image%201.webp" loading="lazy" alt="" className="slider-author-image" /></div><div className="slider-author-image-box"><img src="/images/696d1ddf6aa59d2cc17ba563_Slider%20Author%20Image%202.webp" loading="lazy" alt="" className="slider-author-image" /></div><div data-w-id="0b755b92-9716-84f6-01d1-3824b0c0ef74" className="slider-author-active-box"><div className="slider-author-active-image-box"><img src="/images/697f59ec2b1c8f4dd7f23a08_Slider%20Active%20Image%202-1.webp" loading="lazy" sizes="100vw" srcSet="/images/697f59ec2b1c8f4dd7f23a08_Slider%20Active%20Image%202-1-p-500.webp 500w, images/697f59ec2b1c8f4dd7f23a08_Slider%20Active%20Image%202-1.webp 618w" alt="" className="slider-author-image" /><div style={{"opacity":"0"}} className="slider-overly"><img src="/images/697f53f41d803b2470792a9b_Slider%20Overly.webp" loading="lazy" sizes="100vw" srcSet="/images/697f53f41d803b2470792a9b_Slider%20Overly-p-500.webp 500w, images/697f53f41d803b2470792a9b_Slider%20Overly.webp 618w" alt="" /></div></div><div className="slider-author-content-box"><h3 className="slider-author-name">Priya &amp; Ramesh</h3><div className="description">IT Professionals, Bengaluru</div></div></div><div className="slider-author-image-box"><img src="/images/696d1e035dc32bec776b0124_Slider%20Author%20Image%204.webp" loading="lazy" alt="" className="slider-author-image" /></div><div className="slider-author-image-box"><img src="/images/696d1e14c601956b66fe297f_Slider%20Author%20Image%205.webp" loading="lazy" alt="" className="slider-author-image" /></div></div></div></div><div className="loop-slider w-slide"><div className="slider-item"><div className="slider-content-box"><div className="slider-sub-title-box"><div className="description">What Vanasiri Buyers Say</div></div><div className="slider-botton-content-box"><h2>“The team guided us through every step of the documentation. It's rare to find such clear terms and honest communication in real estate. We are excited to build our weekend home here.”</h2></div></div><div className="slider-author-image-wrap"><div className="slider-author-image-box"><img src="/images/696d1ddf6aa59d2cc17ba563_Slider%20Author%20Image%202.webp" loading="lazy" alt="" className="slider-author-image" /></div><div className="slider-author-image-box"><img src="/images/696d1e8f945ce851c394c45e_Slider%20Author%20Image%203.webp" loading="lazy" alt="" className="slider-author-image" /></div><div data-w-id="ccf5ccb6-a7eb-948b-40e5-90db78f7ecb1" className="slider-author-active-box"><div className="slider-author-active-image-box"><img src="/images/697f5bc140085f76eead76b1_Slider%20Active%20Image%202-2.webp" loading="lazy" sizes="100vw" srcSet="/images/697f5bc140085f76eead76b1_Slider%20Active%20Image%202-2-p-500.webp 500w, images/697f5bc140085f76eead76b1_Slider%20Active%20Image%202-2.webp 618w" alt="" className="slider-author-image" /><div style={{"opacity":"0"}} className="slider-overly"><img src="/images/697f53f41d803b2470792a9b_Slider%20Overly.webp" loading="lazy" sizes="100vw" srcSet="/images/697f53f41d803b2470792a9b_Slider%20Overly-p-500.webp 500w, images/697f53f41d803b2470792a9b_Slider%20Overly.webp 618w" alt="" /></div></div><div className="slider-author-content-box"><h3 className="slider-author-name">Sanjay Kumar</h3><div className="description">Business Owner</div></div></div><div className="slider-author-image-box"><img src="/images/696d1e14c601956b66fe297f_Slider%20Author%20Image%205.webp" loading="lazy" alt="" className="slider-author-image" /></div><div className="slider-author-image-box"><img src="/images/696d1727e0b27165ed7c1ca6_Slider%20Author%20Image%201.webp" loading="lazy" alt="" className="slider-author-image" /></div></div></div></div><div className="loop-slider w-slide"><div className="slider-item"><div className="slider-content-box"><div className="slider-sub-title-box"><div className="description">What Vanasiri Buyers Say</div></div><div className="slider-botton-content-box"><h2>“I was impressed by the thoughtfulness of the layout. Preserving the natural landscape while offering modern connectivity makes Vanasiri a standout investment for our family's future.”</h2></div></div><div className="slider-author-image-wrap"><div className="slider-author-image-box"><img src="/images/696d1e8f945ce851c394c45e_Slider%20Author%20Image%203.webp" loading="lazy" alt="" className="slider-author-image" /></div><div className="slider-author-image-box"><img src="/images/696d1e035dc32bec776b0124_Slider%20Author%20Image%204.webp" loading="lazy" alt="" className="slider-author-image" /></div><div data-w-id="472ff6fb-77dc-805f-4803-5d2988b8a24f" className="slider-author-active-box"><div className="slider-author-active-image-box"><img src="/images/697f5c2f8cf0fcc17d66c8e8_Slider%20Active%20Image%202-3.webp" loading="lazy" sizes="100vw" srcSet="/images/697f5c2f8cf0fcc17d66c8e8_Slider%20Active%20Image%202-3-p-500.webp 500w, images/697f5c2f8cf0fcc17d66c8e8_Slider%20Active%20Image%202-3.webp 618w" alt="" className="slider-author-image" /><div style={{"opacity":"0"}} className="slider-overly"><img src="/images/697f53f41d803b2470792a9b_Slider%20Overly.webp" loading="lazy" sizes="100vw" srcSet="/images/697f53f41d803b2470792a9b_Slider%20Overly-p-500.webp 500w, images/697f53f41d803b2470792a9b_Slider%20Overly.webp 618w" alt="" /></div></div><div className="slider-author-content-box"><h3 className="slider-author-name">Kavita Reddy</h3><div className="description">Architect</div></div></div><div className="slider-author-image-box"><img src="/images/696d1727e0b27165ed7c1ca6_Slider%20Author%20Image%201.webp" loading="lazy" alt="" className="slider-author-image" /></div><div className="slider-author-image-box"><img src="/images/696d1ddf6aa59d2cc17ba563_Slider%20Author%20Image%202.webp" loading="lazy" alt="" className="slider-author-image" /></div></div></div></div><div className="loop-slider w-slide"><div className="slider-item"><div className="slider-content-box"><div className="slider-sub-title-box"><div className="description">What Vanasiri Buyers Say</div></div><div className="slider-botton-content-box"><h2>“From our first site visit to the final registration, the support was exceptional. Knowing our plot is secure and appreciating in value gives us immense peace of mind.”</h2></div></div><div className="slider-author-image-wrap"><div className="slider-author-image-box"><img src="/images/696d1e035dc32bec776b0124_Slider%20Author%20Image%204.webp" loading="lazy" alt="" className="slider-author-image" /></div><div className="slider-author-image-box"><img src="/images/696d1e14c601956b66fe297f_Slider%20Author%20Image%205.webp" loading="lazy" alt="" className="slider-author-image" /></div><div data-w-id="5db74634-58d1-c20a-9d45-a0e2673fb35b" className="slider-author-active-box"><div className="slider-author-active-image-box"><img src="/images/697f5c9dc1fedef18b018e11_Slider%20Active%20Image%202-4.webp" loading="lazy" sizes="100vw" srcSet="/images/697f5c9dc1fedef18b018e11_Slider%20Active%20Image%202-4-p-500.webp 500w, images/697f5c9dc1fedef18b018e11_Slider%20Active%20Image%202-4.webp 618w" alt="" className="slider-author-image" /><div style={{"opacity":"0"}} className="slider-overly"><img src="/images/697f53f41d803b2470792a9b_Slider%20Overly.webp" loading="lazy" sizes="100vw" srcSet="/images/697f53f41d803b2470792a9b_Slider%20Overly-p-500.webp 500w, images/697f53f41d803b2470792a9b_Slider%20Overly.webp 618w" alt="" /></div></div><div className="slider-author-content-box"><h3 className="slider-author-name">Anand M.</h3><div className="description">Investor</div></div></div><div className="slider-author-image-box"><img src="/images/696d1ddf6aa59d2cc17ba563_Slider%20Author%20Image%202.webp" loading="lazy" alt="" className="slider-author-image" /></div><div className="slider-author-image-box"><img src="/images/696d1e8f945ce851c394c45e_Slider%20Author%20Image%203.webp" loading="lazy" alt="" className="slider-author-image" /></div></div></div></div><div className="loop-slider w-slide"><div className="slider-item"><div className="slider-content-box"><div className="slider-sub-title-box"><div className="description">What Vanasiri Buyers Say</div></div><div className="slider-botton-content-box"><h2>“Finding a well-planned farmland project near Bengaluru was tough until we discovered Landmark Vanasiri. The process was transparent, and the location next to Nandugudi Forest is exactly the peaceful retreat we wanted.”</h2></div></div><div className="slider-author-image-wrap"><div className="slider-author-image-box"><img src="/images/696d1e14c601956b66fe297f_Slider%20Author%20Image%205.webp" loading="lazy" alt="" className="slider-author-image" /></div><div className="slider-author-image-box"><img src="/images/696d1727e0b27165ed7c1ca6_Slider%20Author%20Image%201.webp" loading="lazy" alt="" className="slider-author-image" /></div><div data-w-id="e2c699fb-4498-fcee-823b-04f3799a37b0" className="slider-author-active-box"><div className="slider-author-active-image-box"><img src="/images/697f5d345a84863ade7b66a3_Slider%20Active%20Image%202-5.webp" loading="lazy" sizes="100vw" srcSet="/images/697f5d345a84863ade7b66a3_Slider%20Active%20Image%202-5-p-500.webp 500w, images/697f5d345a84863ade7b66a3_Slider%20Active%20Image%202-5.webp 618w" alt="" className="slider-author-image" /><div style={{"opacity":"0"}} className="slider-overly"><img src="/images/697f53f41d803b2470792a9b_Slider%20Overly.webp" loading="lazy" sizes="100vw" srcSet="/images/697f53f41d803b2470792a9b_Slider%20Overly-p-500.webp 500w, images/697f53f41d803b2470792a9b_Slider%20Overly.webp 618w" alt="" /></div></div><div className="slider-author-content-box"><h3 className="slider-author-name">Priya &amp; Ramesh</h3><div className="description">IT Professionals, Bengaluru</div></div></div><div className="slider-author-image-box"><img src="/images/696d1e8f945ce851c394c45e_Slider%20Author%20Image%203.webp" loading="lazy" alt="" className="slider-author-image" /></div><div className="slider-author-image-box"><img src="/images/696d1e035dc32bec776b0124_Slider%20Author%20Image%204.webp" loading="lazy" alt="" className="slider-author-image" /></div></div></div></div></div><div className="display-none w-slider-arrow-left"><div className="w-icon-slider-left"></div></div><div className="display-none w-slider-arrow-right"><div className="w-icon-slider-right"></div></div><div className="slide-nav w-slider-nav w-slider-nav-invert w-shadow w-round"></div></div></div></section>
+    <section className="section testimonial">
+      <div
+        data-w-id="08b15570-e15d-75e0-beb3-3cf142898a71"
+        style={{ opacity: '0' }}
+        className="tesimonial-container"
+      >
+        <div className="slider-item testimonial-row">
+          <div
+            data-delay="2000"
+            data-data-animation="cross"
+            className="testimonials-slider w-slider"
+            data-autoplay="true"
+            data-easing="ease"
+            data-hide-arrows="false"
+            data-disable-swipe="false"
+            data-autoplay-limit="0"
+            data-nav-spacing="3"
+            data-duration="500"
+            data-infinite="true"
+          >
+            <div className="skider-mask w-slider-mask">
+              {trustMarkers.map((t, i) => (
+                <div className="loop-slider w-slide" key={i}>
+                  <div className="slider-content-box">
+                    <div className="slider-sub-title-box">
+                      <div className="description">Why Buyers Trust Mulberry Hills</div>
+                    </div>
+                    <div className="slider-botton-content-box">
+                      <h2>{t.description}</h2>
+                    </div>
+                    <div className="slider-author-content-box">
+                      <h3 className="slider-author-name">{t.title}</h3>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="display-none w-slider-arrow-left">
+              <div className="w-icon-slider-left"></div>
+            </div>
+            <div className="display-none w-slider-arrow-right">
+              <div className="w-icon-slider-right"></div>
+            </div>
+            <div className="slide-nav w-slider-nav w-slider-nav-invert w-shadow w-round"></div>
+          </div>
+          <div className="slider-author-image-wrap">
+            <div className="slider-author-active-box">
+              <div className="slider-author-active-image-box">
+                <img
+                  src="/images/testimonial-buyer.png"
+                  loading="lazy"
+                  alt="Mulberry Hills"
+                  className="slider-author-image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }

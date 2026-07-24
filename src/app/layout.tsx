@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Landmark Vanasiri | Farmland Plots for Sale Near Bengaluru",
-  description: "Own farmland plots at Landmark Vanasiri in Hosakote, 40 km from Bengaluru. Architectural leisure living meets long term farmland investment.",
+  title: "Mulberry Hills Vijayapura | DTCP Approved Gated Plots, North Bangalore",
+  description: "Mulberry Hills is a DTCP approved, RERA registered gated community plotted development in Vijayapura, North Bangalore. 83 plots across 5.5 acres with clear title and bank loan facility.",
   openGraph: {
-    title: "Landmark Vanasiri | Farmland Plots for Sale Near Bengaluru",
-    description: "Own farmland plots at Landmark Vanasiri in Hosakote, 40 km from Bengaluru. Architectural leisure living meets long term farmland investment.",
+    title: "Mulberry Hills Vijayapura | DTCP Approved Gated Plots, North Bangalore",
+    description: "Mulberry Hills is a DTCP approved, RERA registered gated community plotted development in Vijayapura, North Bangalore. 83 plots across 5.5 acres with clear title and bank loan facility.",
     images: [
       {
         url: "/images/696a502b5959735a04b66728_a31d9da5d5b4a67dab52fce97d71cb07_Social-share.jpg",
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
-    title: "Landmark Vanasiri | Farmland Plots for Sale Near Bengaluru",
-    description: "Own farmland plots at Landmark Vanasiri in Hosakote, 40 km from Bengaluru. Architectural leisure living meets long term farmland investment.",
+    title: "Mulberry Hills Vijayapura | DTCP Approved Gated Plots, North Bangalore",
+    description: "Mulberry Hills is a DTCP approved, RERA registered gated community plotted development in Vijayapura, North Bangalore. 83 plots across 5.5 acres with clear title and bank loan facility.",
     images: ["/images/696a502b5959735a04b66728_a31d9da5d5b4a67dab52fce97d71cb07_Social-share.jpg"],
     card: "summary_large_image",
   },
