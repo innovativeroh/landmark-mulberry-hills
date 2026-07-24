@@ -7601,16 +7601,21 @@ blockquote {
   grid-column-gap: var(--_spacing---margin-padding--space-sm-plus);
   grid-row-gap: var(--_spacing---margin-padding--space-sm-plus);
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
   display: flex;
 }
 
 .roofing-content-left-box {
   width: var(--_spacing---full-size);
   flex-flow: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   max-width: 832px;
   display: flex;
+}
+
+.roofing-body-text {
+  max-width: 560px;
+  margin-top: var(--_spacing---margin-padding--space-m);
 }
 
 .roofing-review-box {
@@ -7632,14 +7637,16 @@ blockquote {
 }
 
 .roofing-image-grid {
-  margin-top: var(--_spacing---margin-padding--space-l);
+  margin-top: var(--_spacing---margin-padding--space-xl);
+  padding-top: var(--_spacing---margin-padding--space-l);
+  border-top: 1px solid var(--color--line-gray);
   grid-column-gap: var(--_spacing---margin-padding--space-sm-plus);
   grid-row-gap: var(--_spacing---margin-padding--space-sm-plus);
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   display: flex;
 }
 
@@ -7653,6 +7660,8 @@ blockquote {
 .roofing-image-box.is-large {
   width: var(--_spacing---full-size);
   max-width: 400px;
+  height: 640px;
+  flex: none;
 }
 
 .hero-review-box-wrap {
@@ -8217,6 +8226,7 @@ blockquote {
   border: .5px solid var(--color--text-grey-primary);
   border-radius: 50px;
   flex: none;
+  align-self: flex-start;
 }
 
 .slider-author-image-wrap {
@@ -8258,6 +8268,46 @@ blockquote {
   font-size: var(--_typography---heading-h5--font-size);
   line-height: var(--_typography---heading-h5--line-height);
   letter-spacing: var(--_typography---heading-h5--letter-spacing);
+}
+
+.testimonial-row {
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--_spacing---margin-padding--space-xl-plus);
+  text-align: left;
+}
+
+.testimonial-row .slider-content-box {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.testimonial-row .testimonials-slider {
+  flex: 1;
+  background-color: transparent;
+}
+
+.testimonial-row .slider-author-image-wrap {
+  flex: none;
+  margin-top: 0;
+}
+
+.testimonial-row .slider-author-active-box {
+  width: 280px;
+  max-width: 280px;
+}
+
+@media screen and (max-width: 991px) {
+  .testimonial-row {
+    flex-flow: column;
+    text-align: center;
+  }
+
+  .testimonial-row .slider-content-box {
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .roofing {
@@ -8509,6 +8559,16 @@ blockquote {
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
   display: grid;
+}
+
+.hero-input-wrapper {
+  grid-column: span 2 / span 2;
+}
+
+.hero-input-wrapper.is-message .hero-form-input {
+  height: 90px;
+  padding: 10px;
+  resize: none;
 }
 
 .select-field {
@@ -9737,6 +9797,7 @@ blockquote {
 
   .roofing-image-box.is-large {
     max-width: none;
+    height: 480px;
   }
 
   .trust-grid {
@@ -11027,6 +11088,10 @@ blockquote {
 
   .roofing-image-box {
     max-width: none;
+  }
+
+  .roofing-image-box.is-large {
+    height: 360px;
   }
 
   .roofing-image {

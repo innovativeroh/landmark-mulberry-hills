@@ -119,7 +119,7 @@ export default function Timeline() {
         <div className="hero-service-wrap" style={{ marginBottom: '120px', position: 'relative', zIndex: 1 }}>
           <div className="hero-service-title-box" style={{ maxWidth: '100%' }}>
             <h2 className="hero-service-title" style={{ textAlign: 'center', fontSize: '4rem', color: '#1a1a1a' }}>How Owning Your Plot Works</h2>
-            <p style={{ textAlign: 'center', color: '#666', fontSize: '1.25rem', marginTop: '20px', maxWidth: '600px', margin: '20px auto 0' }}>A seamless, guided journey from your first site visit to building your dream farmhouse.</p>
+            <p style={{ textAlign: 'center', color: '#666', fontSize: '1.25rem', marginTop: '20px', maxWidth: '600px', margin: '20px auto 0' }}>A seamless, guided journey from your first site visit to owning your plot at Mulberry Hills.</p>
           </div>
         </div>
         
@@ -128,67 +128,67 @@ export default function Timeline() {
           {/* Step 1: Landscape */}
           <div className="editorial-row">
             <div className="editorial-img-container">
-              <img src="/images/b8d5ad51-6261-4e51-a9e9-24c2ae8e2575.png" alt="Site Visit" className="editorial-img" loading="lazy" />
+              <img src="/images/b8d5ad51-6261-4e51-a9e9-24c2ae8e2575.png" alt="Enquiry & Site Visit" className="editorial-img" loading="lazy" />
             </div>
             <div className="editorial-content-box">
               <div className="editorial-number-bg">01</div>
-              <h3 className="editorial-title">Site Visit</h3>
-              <div className="editorial-desc">Explore Landmark Vanasiri and the surrounding Hosakote countryside firsthand. Walk the grounds and visualize your future leisure living experience.</div>
+              <h3 className="editorial-title">Enquiry &amp; Site Visit</h3>
+              <div className="editorial-desc">Reach out by phone or the enquiry form, and schedule a visit to see the Mulberry Hills layout and location firsthand.</div>
             </div>
           </div>
 
           {/* Step 2: Portrait */}
           <div className="editorial-row reverse">
             <div className="editorial-img-container portrait">
-              <img src="/images/7696353e-45c7-4ccb-b8ad-6bab90dab678.png" alt="Plot Selection" className="editorial-img" loading="lazy" />
+              <img src="/images/7696353e-45c7-4ccb-b8ad-6bab90dab678.png" alt="Plot Selection & Booking" className="editorial-img" loading="lazy" />
             </div>
             <div className="editorial-content-box">
               <div className="editorial-number-bg">02</div>
-              <h3 className="editorial-title">Plot Selection</h3>
-              <div className="editorial-desc">Choose from architecturally planned farmland layouts suited to your long-term goals. Whether you want a corner plot for a large farmhouse or a quiet retreat surrounded by nature.</div>
+              <h3 className="editorial-title">Plot Selection &amp; Booking</h3>
+              <div className="editorial-desc">Choose a plot from the master layout plan and complete booking formalities with the sales team, including token payment and agreement documentation.</div>
             </div>
           </div>
 
           {/* Step 3: Landscape */}
           <div className="editorial-row">
             <div className="editorial-img-container">
-              <img src="/images/3e1ab70b-9574-477d-b726-431dd7182913.png" alt="Documentation" className="editorial-img" loading="lazy" />
+              <img src="/images/3e1ab70b-9574-477d-b726-431dd7182913.png" alt="Home Loan Assistance" className="editorial-img" loading="lazy" />
             </div>
             <div className="editorial-content-box">
               <div className="editorial-number-bg">03</div>
-              <h3 className="editorial-title">Documentation</h3>
-              <div className="editorial-desc">Complete due diligence and paperwork with our team's completely transparent guidance. We ensure every legal detail is perfect before you move forward.</div>
+              <h3 className="editorial-title">Home Loan Assistance</h3>
+              <div className="editorial-desc">Use the bank loan facilitation available at Mulberry Hills to help finance your purchase.</div>
             </div>
           </div>
 
           {/* Step 4: Portrait */}
           <div className="editorial-row reverse">
             <div className="editorial-img-container portrait">
-              <img src="/images/26e2bae0-c69e-4a44-a4f4-7d360db01b4d.png" alt="Booking & Registration" className="editorial-img" loading="lazy" />
+              <img src="/images/26e2bae0-c69e-4a44-a4f4-7d360db01b4d.png" alt="Registration & Possession" className="editorial-img" loading="lazy" />
             </div>
             <div className="editorial-content-box">
               <div className="editorial-number-bg">04</div>
-              <h3 className="editorial-title">Booking & Registration</h3>
-              <div className="editorial-desc">Secure your plot with clear, straightforward terms and full legal registration support. We handle the heavy lifting so you can focus on the excitement of ownership.</div>
+              <h3 className="editorial-title">Registration &amp; Possession</h3>
+              <div className="editorial-desc">Proceed to registration with clear marketable title, DTCP approval and E-Khata in place, and take possession of your plot.</div>
             </div>
           </div>
 
           {/* Step 5: Landscape */}
           <div className="editorial-row">
             <div className="editorial-img-container">
-              <img src="/images/63b9c01d-24ae-4c7b-a9d7-c795f7ea9c85.png" alt="Ownership" className="editorial-img" loading="lazy" />
+              <img src="/images/63b9c01d-24ae-4c7b-a9d7-c795f7ea9c85.png" alt="Ownership & Beyond" className="editorial-img" loading="lazy" />
             </div>
             <div className="editorial-content-box">
               <div className="editorial-number-bg">05</div>
-              <h3 className="editorial-title">Ownership & Beyond</h3>
-              <div className="editorial-desc">Begin building your bespoke weekend farmhouse, or hold your farmland investment for the future. The land is yours to cultivate and enjoy.</div>
-              
+              <h3 className="editorial-title">Ownership &amp; Beyond</h3>
+              <div className="editorial-desc">Your plot at Mulberry Hills is yours to build on or hold for the future. Takes good living to another level.</div>
+
               <div style={{ marginTop: '50px' }}>
-                <a href="/contact" className="primary-button-link w-inline-block">
+                <a href="#contact" className="primary-button-link w-inline-block">
                   <div className="primary-button-shadow second"></div>
                   <div className="primary-button-text-box">
-                    <div className="primary-button-text">Schedule Tour</div>
-                    <div className="primary-button-hover-text black">Schedule Tour</div>
+                    <div className="primary-button-text">Book a Site Visit</div>
+                    <div className="primary-button-hover-text black">Book a Site Visit</div>
                   </div>
                 </a>
               </div>
