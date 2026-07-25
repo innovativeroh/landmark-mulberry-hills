@@ -5724,14 +5724,15 @@ blockquote {
 }
 
 .footer-logo {
-  max-width: 242px;
-  max-height: 45px;
+  max-width: 420px;
+  max-height: 90px;
+  filter: brightness(0) invert(1);
 }
 
 .footer-logo-box {
   justify-content: flex-start;
   align-items: flex-start;
-  max-width: 226px;
+  max-width: 420px;
 }
 
 .footer-flex-wrap {
@@ -6205,6 +6206,10 @@ blockquote {
   max-width: 114px;
   padding-left: 0;
   display: flex;
+}
+
+.navbar-logo-image {
+  filter: brightness(0) invert(1);
 }
 
 
