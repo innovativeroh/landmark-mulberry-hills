@@ -5724,14 +5724,14 @@ blockquote {
 }
 
 .footer-logo {
-  max-width: 242px;
-  max-height: 45px;
+  max-width: 340px;
+  max-height: 100px;
 }
 
 .footer-logo-box {
   justify-content: flex-start;
   align-items: flex-start;
-  max-width: 226px;
+  max-width: 340px;
 }
 
 .footer-flex-wrap {
@@ -5774,6 +5774,10 @@ blockquote {
   transform: translate(10px);
 }
 
+.footer-menu-nowrap {
+  white-space: nowrap;
+}
+
 .footer-social-wrap {
   grid-column-gap: var(--_spacing---margin-padding--space-s);
   grid-row-gap: var(--_spacing---margin-padding--space-s);
@@ -5802,7 +5806,7 @@ blockquote {
 
 .footer-roofing-box {
   margin-top: var(--_spacing---margin-padding--space-4xl);
-  margin-bottom: -123px;
+  margin-bottom: -60px;
   overflow: hidden;
 }
 
@@ -8299,8 +8303,8 @@ blockquote {
 }
 
 .testimonial-row .slider-author-active-box {
-  width: 280px;
-  max-width: 280px;
+  width: 380px;
+  max-width: 380px;
 }
 
 @media screen and (max-width: 991px) {
@@ -9432,7 +9436,7 @@ blockquote {
   }
 
   .footer-roofing-box {
-    margin-bottom: -60px;
+    margin-bottom: -30px;
   }
 
   .nav-menu-content {
@@ -10255,7 +10259,7 @@ blockquote {
   }
 
   .footer-roofing-box {
-    margin-bottom: -30px;
+    margin-bottom: -15px;
   }
 
   .nav-menu-content {
@@ -10829,6 +10833,10 @@ blockquote {
 
   .footer-single-widget {
     width: 100%;
+  }
+
+  .footer-menu-nowrap {
+    white-space: normal;
   }
 
   .nav-menu-content {
