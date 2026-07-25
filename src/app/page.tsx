@@ -4,6 +4,8 @@ import Hero from '@/components/Hero';
 import Roofing from '@/components/Roofing';
 import Stats from '@/components/Stats';
 import HeroService from '@/components/HeroService';
+import Connectivity from '@/components/Connectivity';
+import Distances from '@/components/Distances';
 import ScrollBlock from '@/components/ScrollBlock';
 import Timeline from '@/components/Timeline';
 import Material from '@/components/Material';
@@ -21,6 +23,8 @@ export default function Home() {
       <Roofing />
       <Stats />
       <HeroService />
+      <Connectivity />
+      <Distances />
       <ScrollBlock />
       <Timeline />
       <Material />

@@ -1,7 +1,96 @@
 import React from 'react';
 
+const amenityGroups = [
+  {
+    icon: '/images/69665c4191e90125c5dfa8cd_Hero%20Service%20Icon%201.svg',
+    title: 'Gated Community & Grand Entrance',
+    accent: 'var(--color--brand-gold)',
+    items: [
+      'Gated Community',
+      'Entrance Arch with Outstanding Architectural Design',
+      'Beautifully Landscaped Entrance',
+    ],
+  },
+  {
+    icon: '/images/69665e0657df938d099131c1_Hero%20Service%20Icon%202.svg',
+    title: 'Underground Utility Connections',
+    accent: 'var(--color--brand-maroon)',
+    items: [
+      'Underground electrical connection to each plot',
+      'Water connection to each plot',
+      'Sanitary connection to each plot',
+    ],
+  },
+  {
+    icon: '/images/69665e062a4fd62285dbf651_Hero%20Service%20Icon%203.svg',
+    title: 'Drainage & Rainwater Management',
+    accent: 'var(--color--brand-teal)',
+    items: [
+      'Drainage Lines',
+      'Storm water drainage',
+      'Rainwater harvesting',
+    ],
+  },
+  {
+    icon: '/images/69665e0656eeaccdeb5590ed_Hero%20Service%20Icon%204.svg',
+    title: 'Roads & Recreation',
+    accent: 'var(--color--brand-gold)',
+    items: [
+      'Well tarred 30 ft roads',
+      'Street lights',
+      'Well-developed Butterfly Theme Park',
+      "Children's Play area",
+    ],
+  },
+];
+
 export default function HeroService() {
   return (
-    <section id="amenities" className="section hero-service"><div className="container"><div className="hero-service-wrap"><div data-w-id="ffa2e89c-c90f-6d13-1394-a09dba4f5bcb" style={{"opacity":"0"}} className="hero-service-title-box"><h2 className="hero-service-title">Amenities &amp; Infrastructure at Mulberry Hills</h2></div></div></div><div className="hero-service-card-block"><div className="container"><div className="hero-service-grid"><div data-w-id="89be2c8b-a894-29eb-f5c1-5a8a01977374" style={{"opacity":"0"}} className="hero-service-single-card"><div data-w-id="8e5ca955-9718-f59f-3e39-078dacc2a5f7" style={{"opacity":"0"}} className="hero-service-icon-box"><img src="/images/69665c4191e90125c5dfa8cd_Hero%20Service%20Icon%201.svg" loading="lazy" alt="" className="hero-service-icon" /></div><div data-w-id="416a9269-60fe-1083-c55f-779760e354b1" style={{"opacity":"0"}} className="hero-service-content-box"><h3 className="hero-service-card-title">Gated Community &amp; Grand Entrance</h3><div className="description-medium">A single controlled entry point with a landscaped, architectural entrance arch.</div></div></div><div data-w-id="0a0f49e6-824e-bef2-5cbd-f5a6ea49a547" style={{"opacity":"0"}} className="hero-service-single-card _2"><div data-w-id="0a0f49e6-824e-bef2-5cbd-f5a6ea49a548" style={{"opacity":"0"}} className="hero-service-icon-box"><img src="/images/69665e0657df938d099131c1_Hero%20Service%20Icon%202.svg" loading="lazy" alt="" className="hero-service-icon" /></div><div data-w-id="0a0f49e6-824e-bef2-5cbd-f5a6ea49a54a" style={{"opacity":"0"}} className="hero-service-content-box"><h3 className="hero-service-card-title _2">Underground Utility Connections</h3><div className="description-medium">Electrical, water and sanitary connections run underground to every plot.</div></div></div><div data-w-id="a48237f3-5f42-0b6e-0f3f-bb1ca69c1574" style={{"opacity":"0"}} className="hero-service-single-card"><div data-w-id="a48237f3-5f42-0b6e-0f3f-bb1ca69c1575" style={{"opacity":"0"}} className="hero-service-icon-box"><img src="/images/69665e062a4fd62285dbf651_Hero%20Service%20Icon%203.svg" loading="lazy" alt="" className="hero-service-icon" /></div><div data-w-id="a48237f3-5f42-0b6e-0f3f-bb1ca69c1577" style={{"opacity":"0"}} className="hero-service-content-box"><h3 className="hero-service-card-title">Drainage &amp; Rainwater Harvesting</h3><div className="description-medium">Storm water drainage and rainwater harvesting built into the layout.</div></div></div><div data-w-id="5378889b-26a5-f750-ec3b-478465247846" style={{"opacity":"0"}} className="hero-service-single-card _4"><div data-w-id="5378889b-26a5-f750-ec3b-478465247847" style={{"opacity":"0"}} className="hero-service-icon-box"><img src="/images/69665e0656eeaccdeb5590ed_Hero%20Service%20Icon%204.svg" loading="lazy" alt="" className="hero-service-icon" /></div><div data-w-id="5378889b-26a5-f750-ec3b-478465247849" style={{"opacity":"0"}} className="hero-service-content-box"><h3 className="hero-service-card-title _2">Well Tarred Roads &amp; Street Lighting</h3><div className="description-medium">30 ft tarred internal roads with street lights throughout.</div></div></div></div></div></div></section>
+    <section id="amenities" className="section hero-service">
+      <div className="container">
+        <div className="hero-service-wrap">
+          <div className="hero-service-title-box">
+            <h2 className="hero-service-title">Amenities &amp; Infrastructure at Mulberry Hills</h2>
+          </div>
+        </div>
+      </div>
+      <div className="hero-service-card-block">
+        <div className="container">
+          <div className="amenities-info-grid">
+            <div className="amenities-info-content">
+              {amenityGroups.map((group) => (
+                <div className="info-card" style={{ '--accent': group.accent } as React.CSSProperties} key={group.title}>
+                  <div className="card-icon-box">
+                    <img src={group.icon} loading="lazy" alt="" className="amenities-card-icon" />
+                  </div>
+                  <h3 className="info-card-title">{group.title}</h3>
+                  <ul className="info-card-list">
+                    {group.items.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+            <div className="amenities-info-media">
+              <img
+                src="/images/amenities-garden.png"
+                loading="lazy"
+                alt="Landscaped pergola, walkways and children's play area at Mulberry Hills"
+                className="amenities-info-photo"
+              />
+              <div className="amenities-info-diagram-wrap">
+                <img
+                  src="/images/amenities-road-diagram.png"
+                  loading="lazy"
+                  alt="Road infrastructure cross-section showing landscaping, street light, foot path, water supply, bioretention, sewer water drain and sewage drain"
+                  className="amenities-info-diagram"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
